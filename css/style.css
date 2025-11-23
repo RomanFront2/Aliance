@@ -18,9 +18,14 @@ body {
   font-weight: 400;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .container {
   max-width: 90rem;
-  margin: 0 15rem 0 15rem;
+  /* margin: 0 15rem 0 15rem; */
+  margin: auto;
 }
 
 .button {
@@ -62,6 +67,10 @@ body {
   padding: 1.5625rem 2.1875rem 1.5625rem 3.125rem;
 }
 
+.navbar-button .button-icon {
+  display: none;
+}
+
 .navbar-light {
   background-color: #fff;
   color: #292D33;
@@ -75,6 +84,7 @@ body {
 .phone-icon {
   width: 1rem;
   height: 1.0625rem;
+  fill: #5c8ee6;
 }
 
 .header {
@@ -314,7 +324,7 @@ body {
   }
 }
 
-@media (max-width: 1630px) {
+@media (max-width: 1700px) {
   html {
     font-size: 14px;
   }
@@ -328,9 +338,17 @@ body {
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1460px) {
   html {
     font-size: 13px;
+  }
+
+  .container {
+    max-width: 80rem;
+  }
+
+  .header-logo {
+    padding: 0px 2rem;
   }
 
   .header-nav-item {
@@ -340,35 +358,169 @@ body {
   .header-features-item {
     padding: 2.125rem 1.6rem 1.875rem 1.6rem;
   }
+
+  .logo-svg {
+    width: 6rem;
+  }
+
+  .header-phone {
+    margin-right: 2rem;
+  }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
+  .container {
+    max-width: 70rem;
+  }
+
+  .header-phone {
+    display: none;
+  }
+
+  .navbar {
+    height: 5rem;
+  }
+
+  .navbar-button {
+    padding: 0 2rem;
+  }
+
+  /* .header-features-item {
+    padding: 2.125rem 1.5rem 1.875rem 1.5rem;
+  } */
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 60rem;
+  }
+
   html {
     font-size: 12px;
   }
 
-  .header-features-item {
-    padding: 2.125rem 1.5rem 1.875rem 1.5rem;
-  }
-}
-
-@media (max-width: 1140px) {
-  html {
-    font-size: 11px;
+  .header-nav {
+    display: none;
   }
 
-  .header-features-item {
-    padding: 2.125rem 1.5rem 1.875rem 1.5rem;
+  .header-logo {
+    flex-grow: 1;
+    justify-content: center;
   }
 
-}
-
-@media (max-width: 1050px) {
-  html {
-    font-size: 10px;
+  .mobile-menu-toggle {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.8rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
 
-  .header-features-item {
-    padding: 2.125rem 1.5rem 1.875rem 1.5rem;
+  .navbar-light .mobile-menu-line {
+    background-color: #333;
+  }
+
+  .mobile-menu-line {
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .mobile-menu-line:nth-child(2) {
+    width: 80%;
+  }
+
+  .navbar-button .button-text {
+    display: none;
+  }
+
+  .navbar-button .button-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .mobile-menu.isOpen {
+    display: block;
+  }
+
+  .mobile-menu-nav {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .mobile-menu-nav-item {
+    margin-bottom: 2rem;
+  }
+
+  .mobile-menu-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    color: #292D33;
+  }
+
+  .mobile-submenu {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .mobile-submenu-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #828A99;
+  }
+
+  .mobile-phone {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    text-decoration: underline;
+    color: #292d33;
+    border-top: 1px solid #ebebf0;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-info-adress,
+  .mobile-info-email {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #292d33;
   }
 }

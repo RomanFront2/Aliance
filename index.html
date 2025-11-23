@@ -15,7 +15,64 @@
 </head>
 
 <body>
+  <div class="mobile-menu">
+    <ul class="mobile-menu-nav">
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">О компании</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Контрактное производство</a>
+        <ul class="mobile-submenu">
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Бытовая химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Дезинфицирующие средства</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Новости</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Контакты</a>
+      </li>
+    </ul>
+    <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
+    <div class="mobile-info">
+      <svg class="phone-icon">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <address class="mobile-info-adress">г. Мосвка, Холодильный пер. 4к1с8</address>
+    </div>
+    <div class="mobile-info">
+      <svg class="phone-icon">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <a class="mobile-info-email" href="mailto:a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
+    </div>
+  </div>
   <nav class="navbar">
+    <a href="#" class="mobile-menu-toggle">
+      <div class="mobile-menu-line"></div>
+      <div class="mobile-menu-line"></div>
+      <div class="mobile-menu-line"></div>
+    </a>
     <a href="./" class="header-logo">
       <svg class="logo-svg">
         <use href="img/sprite.svg#logo"></use>
@@ -44,14 +101,19 @@
       </svg>
       <a class="header-phone-link" href="tel:+74996861014">+7 (499) 686-10-14</a>
     </div>
-    <button class="navbar-button button">Получить консультацию</button>
+    <button class="navbar-button button">
+      <svg class="button-icon">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <span class="button-text">Получить консультацию</span>
+    </button>
   </nav>
   <header class="header header-image">
     <div class="container">
       <div class="header-content">
         <div class="separator"></div>
         <h1 class="header-title">
-          Комплексное обеспечение товарами и расходными материалами бизнеса
+          Комплексное обеспечение товарами и расходными материалами бизнеса
         </h1>
         <p class="header-text">
           Высокий уровень вовлечения представителей целевой аудитории является
