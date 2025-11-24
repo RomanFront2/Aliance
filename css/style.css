@@ -509,6 +509,7 @@ body {
   }
 
   .mobile-info {
+    height: 1.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -535,5 +536,26 @@ body {
 
   .closeMenu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
+  }
+
+  .mobile-menu-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 3.9375rem;
+    height: 1.5rem;
+    gap: .9375rem;
+    margin-bottom: .9375rem;
+  }
+
+  .mobile-info-icon {
+    width: 1rem;
+    height: 1.0625rem;
+  }
+
+  .mobile-socials-link,
+  .socials-icon {
+    height: 100%;
+    width: 100%;
   }
 }
