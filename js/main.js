@@ -27,7 +27,6 @@ const closeMenu = (event) => {
   lightModeOff()
 }
 
-
 window.addEventListener('scroll', () => {
   this.scrollY > 1 ? lightModeOn() : lightModeOff()
 })
@@ -35,4 +34,49 @@ window.addEventListener('scroll', () => {
 mobileMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   mobileMenu.classList.contains('isOpen') ? closeMenu() : openMenu();
+})
+
+const swiper = new Swiper(".swiper.swiper-features", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  }
+})
+
+const swiperSteps = new Swiper(".swiper.swiper-steps", {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-steps-button-next',
+    prevEl: '.swiper-steps-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  }
 })
