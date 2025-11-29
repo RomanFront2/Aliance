@@ -114,6 +114,8 @@ body {
 
 .header-nav {
   display: flex;
+  align-items: center;
+  height: 100%;
   flex-basis: 100%;
   list-style: none;
   padding: 0;
@@ -122,6 +124,9 @@ body {
 }
 
 .header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-right: 4.7%;
   word-spacing: 1px;
@@ -136,10 +141,32 @@ body {
 }
 
 .header-nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
   font-size: 1rem;
   line-height: 160%;
   color: inherit;
+  position: relative;
+}
+
+.header-nav-link:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #5c8ee6;
+  transition: width 0.2s;
+  left: auto;
+  right: 0;
+}
+
+.header-nav-link:hover:after {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 
 .header-phone {
@@ -348,6 +375,12 @@ body {
   background: #5C8EE5;
   width: 2.5rem;
   margin-right: 1.25rem;
+  margin-right: 1rem;
+  transition: width 0.2s;
+}
+
+.steps-link:hover::before {
+  width: 3.75rem;
 }
 
 .cards {
@@ -356,9 +389,20 @@ body {
 }
 
 .card {
+  text-decoration: none;
   flex-basis: 33%;
   border: 1px solid #ebebf0;
   position: relative;
+  transition: border 0.2s;
+  cursor: pointer;
+}
+
+.card:hover .card-title {
+  color: #5c8ee6;
+}
+
+.card:hover {
+  border-color: #5c8ee6;
 }
 
 .card-content {
@@ -372,6 +416,7 @@ body {
   color: #292d33;
   margin-top: 0;
   margin-bottom: .625rem;
+  transition: color 0.2s;
 }
 
 .card-text {
