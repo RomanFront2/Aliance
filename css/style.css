@@ -66,7 +66,7 @@ body {
   flex-shrink: 0;
   height: 100%;
   letter-spacing: 0.3px;
-  padding: 1.5625rem 2.1875rem 1.5625rem 3.125rem;
+  padding: 1.5625rem 3.125rem;
 }
 
 .navbar-button .button-icon {
@@ -99,6 +99,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   position: relative;
+  height: 60.625rem;
 }
 
 .header-image::before {
@@ -294,7 +295,7 @@ body {
 }
 
 .section-title {
-  margin: 1.625rem 0 3.25rem 0;
+  margin: 1.625rem 0 2.2rem 0;
   font-family: "Bebas Neue Book";
   font-size: 3.75rem;
   line-height: 120%;
@@ -304,6 +305,7 @@ body {
 
 .section-light-scheme {
   margin-top: 9.3rem;
+  margin-bottom: 110px;
 }
 
 .steps {
@@ -317,7 +319,7 @@ body {
 .steps-item {
   width: 25%;
   min-height: 100%;
-  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }
 
 .steps-num {
@@ -383,6 +385,14 @@ body {
   width: 3.75rem;
 }
 
+.production {
+  margin-top: 110px;
+}
+
+.production-title {
+  margin-bottom: 54px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -390,11 +400,13 @@ body {
 
 .card {
   text-decoration: none;
-  flex-basis: 33%;
+  /* flex-basis: 33%; */
   border: 1px solid #ebebf0;
   position: relative;
   transition: border 0.2s;
   cursor: pointer;
+  width: 480px;
+  height: 593px;
 }
 
 .card:hover .card-title {
@@ -409,6 +421,10 @@ body {
   padding: 2.5rem 3.125rem;
 }
 
+.cards>a:nth-child(3)>.card-content {
+  padding-right: 20px;
+}
+
 .card-title {
   font-weight: 400;
   font-size: 1.75rem;
@@ -417,6 +433,7 @@ body {
   margin-top: 0;
   margin-bottom: .625rem;
   transition: color 0.2s;
+  letter-spacing: 0.2px;
 }
 
 .card-text {
@@ -425,6 +442,7 @@ body {
   line-height: 160%;
   color: #828a99;
   margin-bottom: 394px;
+  width: 310px;
 }
 
 .card-image {
@@ -432,7 +450,70 @@ body {
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: 90%;
+  width: 100%;
+}
+
+.marks-title {
+  letter-spacing: 0.6px;
+  margin-bottom: 55px;
+}
+
+.marks_wrp {
+  display: flex;
+}
+
+.mark-card {
+  text-decoration: none;
+  display: flex;
+  min-height: 17.5rem;
+  border: 1px solid #ebebf0;
+  flex-basis: 50%;
+}
+
+.mark-content {
+  margin: 50px 50px 70px 50px;
+}
+
+.mark-svg {
+  width: 11.25rem;
+  height: 11.25rem;
+  margin: 50px 0 50px 50px;
+}
+
+.mark-svg-active {
+  display: none;
+}
+
+.mark-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+}
+
+.mark-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  margin-top: 10px;
+}
+
+.mark-card:hover .mark-title {
+  color: #5c8ee6;
+}
+
+.mark-card:hover {
+  border-color: #5c8ee6;
+}
+
+.mark-card:hover .mark-svg-active {
+  display: block;
+}
+
+.mark-card:hover .mark-svg-noactive {
+  display: none;
 }
 
 @media (max-width: 1815px) {
