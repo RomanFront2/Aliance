@@ -65,7 +65,7 @@ body {
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
-  letter-spacing: 0.3px;
+  letter-spacing: .2992px;
   padding: 1.5625rem 3.125rem;
 }
 
@@ -99,7 +99,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   position: relative;
-  height: 60.625rem;
+  /* height: 60.625rem; */
 }
 
 .header-image::before {
@@ -203,7 +203,7 @@ body {
   font-size: 5rem;
   line-height: 120%;
   margin: 1.375rem 0 2.5rem 0;
-  letter-spacing: 0.65px;
+  letter-spacing: .6496px;
 }
 
 .header-text {
@@ -212,12 +212,13 @@ body {
   font-size: 1rem;
   line-height: 160%;
   margin-bottom: 3.125rem;
-  letter-spacing: 0.15px;
+  letter-spacing: .1504px;
 }
 
 .header-features {
   display: flex;
-  min-height: 10.5rem;
+  /* min-height: 10.5rem; */
+  height: 10.5rem;
   width: 100%;
   padding: 0;
   margin-top: 6.25rem;
@@ -243,13 +244,13 @@ body {
 }
 
 .header-features-svg {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .slider-buttons {
   display: none;
-  height: 44px;
+  height: 2.75rem;
 }
 
 .swiper-steps-buttons {
@@ -269,8 +270,8 @@ body {
 
 .swiper-steps-button-prev,
 .swiper-steps-button-next {
-  width: 60px;
-  height: 40px;
+  width: 3.75rem;
+  height: 2.5rem;
   background: #5C8EE5;
   display: flex;
   align-items: center;
@@ -279,8 +280,8 @@ body {
 }
 
 .arrow-slider-svg {
-  width: 36px;
-  height: 24px;
+  width: 2.25rem;
+  height: 1.5rem;
 }
 
 .separator {
@@ -299,13 +300,13 @@ body {
   font-family: "Bebas Neue Book";
   font-size: 3.75rem;
   line-height: 120%;
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
   color: #292D33;
 }
 
 .section-light-scheme {
-  margin-top: 9.3rem;
-  margin-bottom: 110px;
+  margin-top: 7.2rem;
+  margin-bottom: 6.875rem;
 }
 
 .steps {
@@ -353,7 +354,7 @@ body {
 .steps-text {
   font-size: 1rem;
   line-height: 160%;
-  letter-spacing: 0.1px;
+  letter-spacing: .1008px;
   color: #828A99;
   margin-top: .625rem;
   margin-bottom: 1.25rem;
@@ -368,7 +369,7 @@ body {
   line-height: 160%;
   color: #5C8EE5;
   margin-top: 1.375rem;
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
 }
 
 .steps-link::before {
@@ -386,11 +387,11 @@ body {
 }
 
 .production {
-  margin-top: 110px;
+  margin-top: 6.875rem;
 }
 
 .production-title {
-  margin-bottom: 54px;
+  margin-bottom: 3.375rem;
 }
 
 .cards {
@@ -405,8 +406,8 @@ body {
   position: relative;
   transition: border 0.2s;
   cursor: pointer;
-  width: 480px;
-  height: 593px;
+  width: 30rem;
+  height: 37.0625rem;
 }
 
 .card:hover .card-title {
@@ -422,7 +423,7 @@ body {
 }
 
 .cards>a:nth-child(3)>.card-content {
-  padding-right: 20px;
+  padding-right: 1.25rem;
 }
 
 .card-title {
@@ -433,7 +434,7 @@ body {
   margin-top: 0;
   margin-bottom: .625rem;
   transition: color 0.2s;
-  letter-spacing: 0.2px;
+  letter-spacing: .2px;
 }
 
 .card-text {
@@ -441,8 +442,8 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  margin-bottom: 394px;
-  width: 310px;
+  margin-bottom: 24.625rem;
+  width: 19.375rem;
 }
 
 .card-image {
@@ -454,12 +455,13 @@ body {
 }
 
 .marks-title {
-  letter-spacing: 0.6px;
-  margin-bottom: 55px;
+  letter-spacing: .6px;
+  margin-bottom: 3.4375rem;
 }
 
 .marks_wrp {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mark-card {
@@ -467,17 +469,18 @@ body {
   display: flex;
   min-height: 17.5rem;
   border: 1px solid #ebebf0;
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  width: 50%;
 }
 
 .mark-content {
-  margin: 50px 50px 70px 50px;
+  margin: 3.125rem 3.125rem 4.375rem 3.125rem;
 }
 
 .mark-svg {
-  width: 11.25rem;
+  width: 180px;
   height: 11.25rem;
-  margin: 50px 0 50px 50px;
+  margin: 3.125rem 0 3.125rem 3.125rem;
 }
 
 .mark-svg-active {
@@ -497,7 +500,7 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  margin-top: 10px;
+  margin-top: .625rem;
 }
 
 .mark-card:hover .mark-title {
@@ -567,6 +570,21 @@ body {
 
   .header-phone {
     margin-right: 2rem;
+  }
+
+  .card {
+    /* width: 30rem; */
+    width: 50%;
+  }
+
+  .mark-svg {
+    width: 8.75rem;
+    height: 8.75rem;
+    margin: 3.125rem 0 3.125rem .625rem;
+  }
+
+  .mark-content {
+    margin: 3.125rem 2.125rem 4.375rem 2.125rem;
   }
 }
 
@@ -780,6 +798,20 @@ body {
     height: 100%;
     width: 100%;
   }
+
+  .mark-card {
+    width: 100%;
+  }
+
+  .mark-content {
+    margin: 3.125rem 3.125rem 4.375rem 3.125rem;
+  }
+
+  .mark-svg {
+    width: 180px;
+    height: 11.25rem;
+    margin: 3.125rem 0 3.125rem 3.125rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -795,8 +827,23 @@ body {
     padding-top: 3rem;
   }
 
+  .cards {
+    flex-direction: column;
+
+  }
+
   .card {
-    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .mark-svg {
+    width: 8.75rem;
+    height: 8.75rem;
+    margin: 2.125rem 0 2.125rem .625rem;
+  }
+
+  .mark-content {
+    margin: 2.125rem 2.125rem 2.125rem 2.125rem;
   }
 }
 
