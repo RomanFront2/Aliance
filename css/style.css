@@ -473,6 +473,10 @@ body {
   width: 50%;
 }
 
+.mark-card-wrp {
+  display: flex;
+}
+
 .mark-content {
   margin: 3.125rem 3.125rem 4.375rem 3.125rem;
 }
@@ -488,11 +492,17 @@ body {
 }
 
 .mark-title {
+  display: block;
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
   margin: 0;
+}
+
+.marks-title-mobile,
+.mark-card-mobile-wrp {
+  display: none;
 }
 
 .mark-text {
@@ -654,7 +664,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem;
+    padding: 2.2rem 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
 
@@ -863,4 +873,199 @@ body {
   .header-content {
     padding-top: 2rem;
   }
+}
+
+@media (max-width: 376px) {
+  .navbar {
+    height: 5.6rem;
+  }
+
+  .logo-svg {
+    width: 10rem;
+    height: 3.15rem;
+  }
+
+  .navbar-button {
+    padding: 0 2.6rem;
+  }
+
+  .container {
+    max-width: 92%;
+  }
+
+  .header-content {
+    padding-top: 3.9rem;
+  }
+
+  .separator {
+    width: 8.175rem;
+  }
+
+  .header-title {
+    font-size: 4rem;
+    line-height: 121%;
+    letter-spacing: 0.4px;
+    margin: 1.275rem 0 1rem 0;
+  }
+
+  .header-text {
+    max-width: 28rem;
+    font-size: 1.2rem;
+    line-height: 150%;
+    margin-bottom: 2.6rem;
+    letter-spacing: -0.15px;
+    word-spacing: 0.7px;
+  }
+
+  .header-button {
+    height: 62px;
+    width: 100%;
+    text-align: center;
+    padding: 1.7rem 3.9375rem 1.7rem 3.75rem;
+    font-size: 1.2rem;
+    line-height: 160%;
+  }
+
+  .header-features {
+    margin-top: 4.4rem;
+    margin-bottom: 3px;
+  }
+
+  .header-features-svg {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .header-features-item {
+    padding: 1.7rem 1.6rem 2.2rem 2.1rem;
+  }
+
+  .header-feature-text {
+    padding-top: 7px;
+    padding-left: 3px;
+    font-size: 1.2rem;
+  }
+
+  .slider-buttons {
+    height: 3.4rem;
+  }
+
+  .section-light-scheme {
+    margin-top: 8.4rem;
+    margin-bottom: 8.3rem;
+  }
+
+  .section-title {
+    margin: 1.4rem 0 1.5rem 0;
+    font-size: 3rem;
+  }
+
+  .steps {
+    margin-bottom: 20px;
+  }
+
+  .steps-num {
+    font-size: 3.7rem;
+    letter-spacing: 3px;
+  }
+
+  .steps-title {
+    margin-top: 1.1rem;
+    letter-spacing: -0.5px;
+    margin-bottom: .625rem;
+  }
+
+  .steps-text {
+    line-height: 180%;
+    letter-spacing: 1.2px;
+    margin-bottom: 2.2rem;
+  }
+
+  .steps-link {
+    font-size: 1.1rem;
+    margin-top: 1.375rem;
+    letter-spacing: 0.9px;
+  }
+
+  .steps-link::before {
+    width: 3.4rem;
+    margin-right: 1.6rem;
+  }
+
+  .swiper-steps-button-prev,
+  .swiper-steps-button-next {
+    width: 5rem;
+    height: 3.4rem;
+  }
+
+  .production {
+    margin-bottom: 8.4rem;
+  }
+
+  .production-title {
+    margin-bottom: 2.7rem;
+  }
+
+  .card-content {
+    padding: 1.7rem 2.4rem 0.9rem 2.3rem;
+    height: 427px;
+  }
+
+  .card-title {
+    letter-spacing: -0.4px;
+    width: 95%;
+    line-height: 126%;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 180%;
+    margin-top: 10px;
+    width: 97%;
+    letter-spacing: 1.4px;
+    word-spacing: -1.7px;
+  }
+
+  .marks {
+    margin-top: 8.2rem;
+  }
+
+  .marks-title,
+  .mark-card-wrp {
+    display: none;
+  }
+
+  .marks-title-mobile,
+  .mark-card-mobile-wrp {
+    display: block;
+  }
+
+  .marks-title-mobile {
+    margin-bottom: 32px;
+  }
+
+  .mark-content-mobile {
+    display: flex;
+    padding: 1px 20px 0px 19px;
+  }
+
+  .mark-title {
+    font-size: 1.75rem;
+    line-height: 126%;
+    padding: 29px 16px 0 27px;
+    letter-spacing: -0.4px;
+  }
+
+  .mark-svg {
+    margin: 2.125rem 0 0.7rem .625rem;
+  }
+
+  .mark-text {
+    font-size: 1.1rem;
+    line-height: 165%;
+    padding: 0px 29px;
+    letter-spacing: 0.5px;
+    margin-bottom: 29px;
+  }
+
 }
