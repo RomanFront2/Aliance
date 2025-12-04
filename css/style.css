@@ -642,13 +642,13 @@ body {
   }
 
   .mobile-menu-toggle {
-    width: 5rem;
+    width: 6.7rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2.2rem 2.5rem;
-    border-right: .0625rem solid rgba(235, 235, 240, 0.2);
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
 
   .navbar-light .mobile-menu-line {
@@ -656,7 +656,7 @@ body {
   }
 
   .mobile-menu-line {
-    height: .0625rem;
+    height: 1px;
     background-color: #fff;
     width: 100%;
     transition: transform 0.2s;
@@ -919,7 +919,6 @@ body {
   }
 
   .header-button {
-    height: 3.875rem;
     width: 100%;
     text-align: center;
     padding: 1.7rem 3.9375rem 1.7rem 3.75rem;
@@ -929,7 +928,7 @@ body {
 
   .header-features {
     margin-top: 4.4rem;
-    margin-bottom: .1875rem;
+    margin-bottom: .1rem;
   }
 
   .header-features-svg {
@@ -948,7 +947,7 @@ body {
   }
 
   .slider-buttons {
-    height: 3.4rem;
+    height: 3.6rem;
   }
 
   .section-light-scheme {
