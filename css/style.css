@@ -250,10 +250,6 @@ body {
   height: 2.75rem;
 }
 
-.swiper-steps-buttons {
-  display: none;
-}
-
 .slider-button-prev,
 .slider-button-next {
   height: 100%;
@@ -265,10 +261,18 @@ body {
   cursor: pointer;
 }
 
-.swiper-steps-button-prev,
-.swiper-steps-button-next {
-  width: 3.75rem;
-  height: 2.5rem;
+.primary-buttons-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.primary-button-prev,
+.primary-button-next {
+  /* width: 3.75rem;
+  height: 2.5rem; */
+  width: 5rem;
+  height: 3.75rem;
   background: #5C8EE5;
   display: flex;
   align-items: center;
@@ -277,7 +281,7 @@ body {
 }
 
 .arrow-slider-svg {
-  width: 2.25rem;
+  width: 2rem;
   height: 1.5rem;
 }
 
@@ -357,10 +361,15 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.swiper-steps-buttons {
+  display: none;
+}
+
 .button-link {
   display: flex;
   align-items: center;
   text-decoration: none;
+  min-width: 11.125rem;
   font-weight: 600;
   font-size: 1rem;
   line-height: 160%;
@@ -563,6 +572,7 @@ body {
 
 .clients {
   margin-top: 9.125rem;
+  margin-bottom: 9rem;
 }
 
 .clients-wrapper {
@@ -631,6 +641,78 @@ body {
 
 .founder-link-mobile {
   display: none;
+}
+
+.blog {
+  margin-top: 9.5rem;
+}
+
+.blog-title {
+  letter-spacing: 0.4px;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.blog-card {
+  display: flex;
+  position: relative;
+  min-height: 25rem;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-end;
+  padding: 3.125rem;
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(41, 45, 51, 0.6);
+  z-index: -1;
+}
+
+.blog-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.blog-card-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  letter-spacing: 0.1px;
+  word-spacing: 0.8px;
+}
+
+.blog-card-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  margin: 0;
+  letter-spacing: 0.1px;
+  word-spacing: 0.3px;
+}
+
+.blog-link {
+  margin-top: 0;
+}
+
+.blog-slider-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: space-between;
 }
 
 @media (max-width: 1815px) {
@@ -730,8 +812,6 @@ body {
 
   .swiper-steps-buttons {
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
   }
 
   .steps-item {
@@ -1106,8 +1186,8 @@ body {
   .header-text {
     max-width: 28rem;
     font-size: 1.2rem;
-    line-height: 150%;
-    margin-bottom: 2.6rem;
+    line-height: 153%;
+    margin-bottom: 2.4rem;
     letter-spacing: -0.1px;
     word-spacing: .7px;
   }
@@ -1186,8 +1266,8 @@ body {
     margin-right: 1.6rem;
   }
 
-  .swiper-steps-button-prev,
-  .swiper-steps-button-next {
+  .primary-button-prev,
+  .primary-button-next {
     width: 5rem;
     height: 3.4rem;
   }
@@ -1223,12 +1303,12 @@ body {
   }
 
   .trademark {
-    margin-top: 8.3rem;
+    margin-top: 8.4rem;
     margin-bottom: 8.4rem;
   }
 
   .trademark-title-mobile {
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.8rem;
     letter-spacing: 0.4px;
   }
 
@@ -1291,6 +1371,7 @@ body {
 
   .clients {
     margin-top: 8.425rem;
+    margin-bottom: 8rem;
   }
 
   .clients-title {
@@ -1313,4 +1394,48 @@ body {
     height: 9.175rem;
   }
 
+  .blog {
+    margin-top: 8.3rem;
+  }
+
+  .blog-title {
+    letter-spacing: 0.3px;
+    margin-bottom: 2.7rem;
+  }
+
+  .blog-swiper-wrapper,
+  .blog-card-image,
+  .blog-card::before {
+    height: 16.2875rem;
+  }
+
+  .blog-card {
+    min-height: 16.2875rem;
+    height: 16.2875rem;
+    margin: 0;
+    padding: 2px 2px;
+  }
+
+  .blog-card-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    word-spacing: 1.8px;
+    padding: 100px 30px 10px 17px;
+  }
+
+  .blog-card-text {
+    display: none;
+  }
+
+  .blog-slider-footer {
+    margin-top: 1.775rem;
+  }
+
+  .blog-link {
+    font-size: 1.1rem;
+    margin-top: -0.225rem;
+    letter-spacing: 0.7px;
+  }
 }

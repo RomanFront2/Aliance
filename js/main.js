@@ -85,3 +85,19 @@ const swiperSteps = new Swiper(".swiper.swiper-steps", {
     }
   }
 })
+
+const swiperBlog = new Swiper(".swiper.swiper-blog", {
+  speed: 400,
+  autoHeight: true,
+  spaceBetween: 30,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.blog-button-next',
+    prevEl: '.blog-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    }
+  }
+})
