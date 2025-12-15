@@ -1047,8 +1047,9 @@ body {
 .modal-dialog {
   background-color: #fff;
   margin: auto;
+  margin-top: 10.8125rem;
   max-width: 28.75rem;
-  padding: 2.5rem 3.125rem;
+  padding: 2.2rem 3.125rem 2.4rem 3.125rem;
   position: relative;
   transform: translateY(-10%);
   opacity: 0;
@@ -1074,7 +1075,9 @@ body {
   line-height: 120%;
   color: #292d33;
   margin-top: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.55rem;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
 }
 
 .modal-text {
@@ -1082,7 +1085,8 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  letter-spacing: 0.1px;
 }
 
 .modal-input-group {
@@ -1090,13 +1094,14 @@ body {
 }
 
 .modal-form-footer {
-  margin-top: 30px;
+  margin-top: 1.9375rem;
 }
 
 .modal-form-button {
   display: block;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding: 1.15rem 3.75rem;
 }
 
 @media (max-width: 1815px) {
@@ -2127,4 +2132,39 @@ body {
     height: 4.25rem;
   }
 
+  .modal-dialog {
+    margin-top: 10.2rem;
+    padding: 2.2rem 2.5rem 2.4rem 2.5rem;
+  }
+
+  .modal-title {
+    font-size: 3.3rem;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.3px;
+  }
+
+  .modal-close {
+    right: 2.625rem;
+  }
+
+  .modal-text {
+    font-size: 1.1rem;
+    line-height: 168%;
+    margin-bottom: 1.7rem;
+    letter-spacing: 0.5px;
+    word-spacing: -0.4px;
+  }
+
+  .modal-form-footer {
+    margin-top: 1.5rem;
+  }
+
+  .modal-form-button {
+    margin-bottom: 1.4rem;
+    padding: 1.65rem 4.25rem;
+    font-size: 1.25rem;
+  }
 }
