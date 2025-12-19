@@ -3,19 +3,18 @@ const logoLight = document.querySelector('.logo-light')
 const logo = document.querySelector('.logo')
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle')
 const mobileMenu = document.querySelector('.mobile-menu')
+const isFront = document.body.classList.contains("front-page")
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light")
-  logo.style.display = "block"
-  logoLight.style.display = "none"
-  // logo.href.baseVal = "img/sprite.svg#logo"
 }
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light")
-  logo.style.display = "none"
-  logoLight.style.display = "block"
-  // logo.href.baseVal = "img/sprite.svg#logo_light"
+}
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
 }
 
 const openMenu = (event) => {
@@ -33,7 +32,10 @@ const closeMenu = (event) => {
 }
 
 window.addEventListener('scroll', () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff()
+  this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("5.875rem")
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff()
+  }
 })
 
 mobileMenuToggle.addEventListener("click", (event) => {

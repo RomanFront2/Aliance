@@ -39,10 +39,6 @@ body {
   cursor: pointer;
 }
 
-.logo {
-  display: none;
-}
-
 .logo-svg {
   width: 9rem;
   height: 2.75rem;
@@ -76,6 +72,21 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292D33;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+
+.navbar-light .logo-dark {
+  display: block;
+}
+
+.navbar-scroll {
   height: 4.625rem;
 }
 
@@ -1104,6 +1115,91 @@ body {
   padding: 1.15rem 3.75rem;
 }
 
+.header-second {}
+
+.header-second-container-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-second-image-bg {
+  background-image: url("../img/header_second_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  position: relative;
+}
+
+.header-second-image {
+  width: 480px;
+  height: 240px;
+  margin-top: 30px;
+}
+
+.header-second-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header-second-title {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 120%;
+  color: #292d33;
+  margin-bottom: 25px;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-item {
+  margin-right: 5px;
+}
+
+.breadcrumb-item>.breadcrumb-link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 160%;
+  color: #828A99;
+  margin-right: 10px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.breadcrumb-item::after {
+  content: '';
+  background: #828A99;
+  width: 12px;
+  height: 1px;
+  margin-right: 10px;
+}
+
+.breadcrumb-item:last-child::after {
+  content: none;
+}
+
+.breadcrumb-item:last-child>.breadcrumb-link {
+  color: #292d33;
+}
+
+.header-second-text-light {
+  color: #fff !important;
+}
+
+.header-second-text-light::after {
+  background: #fff !important;
+}
+
 @media (max-width: 1815px) {
   html {
     font-size: .9375rem;
@@ -1273,6 +1369,10 @@ body {
 
   .footer-menu-wrapper:last-child {
     margin-left: 8.5rem;
+  }
+
+  .header-second-image {
+    display: none;
   }
 
 }
@@ -2166,5 +2266,25 @@ body {
     margin-bottom: 1.4rem;
     padding: 1.65rem 4.25rem;
     font-size: 1.25rem;
+  }
+
+  .header-second-wrapper {
+    padding-top: 47px;
+    /* padding-bottom: 50px; */
+  }
+
+  .header-second-title {
+    margin: 1.4rem 0 2.1rem 0;
+    font-size: 4rem;
+  }
+
+  .breadcrumb-item>.breadcrumb-link {
+    font-size: 0.95rem;
+    margin-right: 8px;
+    letter-spacing: 0.4px;
+  }
+
+  .breadcrumb-item::after {
+    margin-right: 8px;
   }
 }
