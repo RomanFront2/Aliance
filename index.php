@@ -17,78 +17,8 @@
 </head>
 
 <body class="front-page">
-  <div class="mobile-menu">
-    <ul class="mobile-menu-nav">
-      <li class="mobile-menu-nav-item">
-        <a href="about.html" class="mobile-menu-link">О компании</a>
-      </li>
-      <li class="mobile-menu-nav-item">
-        <a href="contract_product.html" class="mobile-menu-link">Контрактное производство</a>
-        <ul class="mobile-submenu">
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="product_avtohim.html">Автомобильная химия</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Бытовая химия</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Дезинфицирующие средства</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Пищевые аэрозоли</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Косметическая продукция</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Краски аэрозольные</a>
-          </li>
-        </ul>
-      </li>
-      <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
-        <ul class="mobile-submenu">
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
-          </li>
-          <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автохимия AP</a>
-          </li>
-        </ul>
-      </li>
-      <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Новости</a>
-      </li>
-      <li class="mobile-menu-nav-item">
-        <a href="#" class="mobile-menu-link">Контакты</a>
-      </li>
-    </ul>
-    <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
-    <div class="mobile-info">
-      <svg class="mobile-info-icon">
-        <use href="img/sprite.svg#mark"></use>
-      </svg>
-      <address class="mobile-info-adress">г. Москва, Холодильный пер. 4к1с8</address>
-    </div>
-    <div class="mobile-info">
-      <svg class="mobile-info-icon">
-        <use href="img/sprite.svg#email"></use>
-      </svg>
-      <a class="mobile-info-email" href="mailto:a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
-    </div>
-    <div class="mobile-menu-socials">
-      <a href="#" class="mobile-socials-link">
-        <svg class="socials-icon">
-          <use href="img/sprite.svg#vk"></use>
-        </svg>
-      </a>
-      <a href="#" class="mobile-socials-link">
-        <svg class="socials-icon">
-          <use href="img/sprite.svg#inst"></use>
-        </svg>
-      </a>
-    </div>
-  </div>
+  <?php include_once('mobile_menu.php');?>
+
   <nav class="navbar">
     <a href="#" class="mobile-menu-toggle">
       <div class="mobile-menu-line"></div>
@@ -105,10 +35,10 @@
     </a>
     <ul class="header-nav">
       <li class="header-nav-item">
-        <a href="about.html" class="header-nav-link">О компании</a>
+        <a href="about.php" class="header-nav-link">О компании</a>
       </li>
       <li class="header-nav-item">
-        <a href="contract_product.html" class="header-nav-link">Контрактное производство</a>
+        <a href="contract_product.php" class="header-nav-link">Контрактное производство</a>
       </li>
       <li class="header-nav-item">
         <a href="#" class="header-nav-link">Собственные торговые марки</a>
@@ -248,7 +178,7 @@
       <div class="separator"></div>
       <h2 class="section-title production-title">Контрактное производство</h2>
       <div class="cards">
-        <a href="product_avtohim.html" class="card">
+        <a href="product_avtohim.php" class="card">
           <div class="card-content">
             <h3 class="card-title">Автомобильная химия</h3>
             <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм
@@ -460,28 +390,28 @@
       <h2 class="section-title blog-title">Блог экспертов в области производства</h2>
       <div class="swiper swiper-blog">
         <div class="swiper-wrapper blog-swiper-wrapper">
-          <a href="blog_more.html" class="swiper-slide blog-card">
+          <a href="blog_more.php" class="swiper-slide blog-card">
             <img src="img/blog/blog_photo_1.png" alt="" class="blog-card-image">
             <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
             <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую
               ситуацию, в равной степени
               предоставлены...</p>
           </a>
-          <a href="blog_more.html" class="swiper-slide blog-card">
+          <a href="blog_more.php" class="swiper-slide blog-card">
             <img src="img/blog/blog_photo_2.png" alt="" class="blog-card-image">
             <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
             <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на
               независимые элементы. Безусловно,
               высокотехнологичная...</p>
           </a>
-          <a href="blog_more.html" class="swiper-slide blog-card">
+          <a href="blog_more.php" class="swiper-slide blog-card">
             <img src="img/blog/blog_photo_1.png" alt="" class="blog-card-image">
             <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
             <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую
               ситуацию, в равной степени
               предоставлены...</p>
           </a>
-          <a href="blog_more.html" class="swiper-slide blog-card">
+          <a href="blog_more.php" class="swiper-slide blog-card">
             <img src="img/blog/blog_photo_2.png" alt="" class="blog-card-image">
             <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
             <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на
@@ -508,186 +438,9 @@
       </div>
     </div>
   </section>
-  <section class="cta">
-    <div class="bg-grey section-cta">
-      <img src="img/cta.png" alt="call to action" class="cta-image">
-      <div class="container cta-form-wrapper">
-        <form action="#" class="cta-form">
-          <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
-          <p class="cta-form-text">
-            Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и
-            поможем даже в самых сложных случаях!
-          </p>
-          <div class="input-group-wrapper">
-            <div class="input-group">
-              <input class="input" id="user-name" type="text" placeholder=" ">
-              <label class="input-group-label" for="user-name">Имя</label>
-            </div>
-            <div class="input-group">
-              <input class="input" id="user-phone" type="tel" placeholder=" ">
-              <label class="input-group-label" for="user-phone">Номер телефона</label>
-            </div>
-          </div>
-          <div class="cta-form-footer">
-            <button class="button cta-form-button" type="submit">Отправить заявку</button>
-            <div class="notify">
-              <svg width="14" height="14" class="notify-icon">
-                <use href="img/sprite.svg#shield"></use>
-              </svg>
-              <p class="notify-text">
-                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность
-                информации!
-              </p>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <svg class="logo-svg footer-logo">
-          <use href="img/sprite.svg#logo"></use>
-        </svg>
-        <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
-        <div class="footer-info footer-addres">
-          <svg class="footer-info-icon" width="20" height="20">
-            <use href="img/sprite.svg#mark"></use>
-          </svg>
-          <address class="footer-info-adress">г. Москва, Холодильный пер. 4к1с8</address>
-        </div>
-        <div class="footer-info footer-email">
-          <svg class="footer-info-icon" width="20" height="20">
-            <use href="img/sprite.svg#email"></use>
-          </svg>
-          <a class="footer-info-email" href="mailto:a.dragunov@tdaliance.ru">a.dragunov@tdaliance.ru</a>
-        </div>
-        <div class="footer-social">
-          <a href="#" class="footer-social-link">
-            <svg class="footer-social-icon" width="20" height="20">
-              <use href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-          <a href="#" class="footer-social-link">
-            <svg class="footer-social-icon" width="20" height="20">
-              <use href="img/sprite.svg#inst"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <hr class="footer-separator" />
-    <div class="container">
-      <div class="footer-bottom">
-        <div class="footer-menu-wrapper">
-          <h2 class="footer-menu-title">Контрактное производство</h2>
-          <ul class="footer-menu-list footer-menu-column-2">
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Автомобильная химия</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Бытовая химия</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Дезинфицирующие средства</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Пищевые аэрозоли</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Косметическая продукция</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Краски аэрозольные</a>
-            </li>
-          </ul>
-        </div>
+  
+<?php include_once('footer.php');?>
 
-        <div class="footer-menu-wrapper">
-          <h2 class="footer-menu-title">Собственные марки</h2>
-          <ul class="footer-menu-list">
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link">Автохимия AP</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-menu-wrapper">
-          <ul class="footer-menu-list">
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link footer-menu-link-bold">О компании</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
-            </li>
-            <li class="fotter-menu-item">
-              <a href="#" class="footer-menu-link footer-menu-link-bold">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <hr class="footer-separator" />
-    <div class="container">
-      <div class="footer-wrapper">
-        <div class="footer-legal">
-          <!-- <p class="copyright">&copy; 2022 «Aliance Production». Все права защищены.</p> -->
-          <p class="copyright">&copy; <?php echo date('Y')?> «Aliance Production». Все права защищены.</p>
-          <a href="#" class="footer-policy">Политики конфиденциальности</a>
-        </div>
-        <div class="footer-autor">
-          <span class="made-in">Сделано в</span>
-          <span class="made-in-mobile">Дизайн и разработка:</span>
-          <svg class="made-in-svg" width="52" height="11">
-            <use href="img/sprite.svg#ruso"></use>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="modal">
-    <div class="modal-dialog">
-      <h2 class="modal-title">Есть вопросы?</h2>
-      <a href="#" class="modal-close" data-toggle="modal">
-        <svg class="close-icon" width="24" height="24">
-          <use href="img/sprite.svg#close"></use>
-        </svg>
-      </a>
-      <p class="modal-text">
-        Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем
-        даже в самых сложных случаях!
-      </p>
-      <form action="#" class="modal-form">
-
-        <div class="input-group-wrapper input-group-vertical">
-          <div class="input-group modal-input-group">
-            <input class="input modal-input" id="modal-user-name" type="text" placeholder=" ">
-            <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
-          </div>
-          <div class="input-group modal-input-group">
-            <input class="input modal-input" id="modal-user-phone" type="tel" placeholder=" ">
-            <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
-          </div>
-        </div>
-        <div class="modal-form-footer">
-          <button class="button modal-form-button" type="submit">Отправить заявку</button>
-          <div class="notify">
-            <svg width="14" height="14" class="notify-icon">
-              <use href="img/sprite.svg#shield"></use>
-            </svg>
-            <p class="notify-text">
-              Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность
-              информации!
-            </p>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
 </body>
 
 </html>
