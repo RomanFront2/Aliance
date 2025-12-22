@@ -2,7 +2,7 @@
     <div class="bg-grey section-cta">
       <img src="img/cta.png" alt="call to action" class="cta-image">
       <div class="container cta-form-wrapper">
-        <form action="#" class="cta-form">
+        <form action="handler.php" method="POST" class="cta-form">
           <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
           <p class="cta-form-text">
             Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и
@@ -10,11 +10,11 @@
           </p>
           <div class="input-group-wrapper">
             <div class="input-group">
-              <input class="input" id="user-name" type="text" placeholder=" ">
+              <input class="input" id="user-name" type="text" name="username" placeholder=" ">
               <label class="input-group-label" for="user-name">Имя</label>
             </div>
             <div class="input-group">
-              <input class="input" id="user-phone" type="tel" placeholder=" ">
+              <input class="input" id="user-phone" type="tel" name="userphone" placeholder=" ">
               <label class="input-group-label" for="user-phone">Номер телефона</label>
             </div>
           </div>
