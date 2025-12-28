@@ -826,6 +826,31 @@ body {
   padding: 0 .625rem;
 }
 
+.input-group-label-phone {
+  position: absolute;
+  color: #828a99;
+  top: -0.5rem;
+  left: 1.25rem;
+  font-size: 10px;
+  background-color: inherit;
+  padding: 0 .625rem;
+}
+
+.input.is-invalid {
+  border: 1px solid red;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: inherit;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+}
+
 .cta {
   margin-top: 13.9375rem;
 }
@@ -1029,7 +1054,8 @@ body {
   display: none;
 }
 
-.modal {
+.modal,
+.modal-thanks {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-100%);
@@ -1044,7 +1070,12 @@ body {
   /* transition: opacity 0.4s; */
 }
 
-.modal.is-open {
+.modal-thanks {
+  margin-top: 0px;
+}
+
+.modal.is-open,
+.modal-thanks.is-open {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
@@ -1055,7 +1086,8 @@ body {
   opacity: 1;
 }
 
-.modal-dialog {
+.modal-dialog,
+.modal-thanks-wrapper {
   background-color: #fff;
   margin: auto;
   margin-top: 10.8125rem;
@@ -1063,8 +1095,12 @@ body {
   padding: 2.2rem 3.125rem 2.4rem 3.125rem;
   position: relative;
   transform: translateY(-10%);
-  opacity: 0;
+  opacity: 1;
   transition: transform 0.4s, opacity 0.4s;
+}
+
+.modal-thanks-wrapper {
+  margin-top: 12.86rem;
 }
 
 .modal-close {
@@ -1114,6 +1150,28 @@ body {
   margin-bottom: 1.5rem;
   padding: 1.15rem 3.75rem;
 }
+
+.thanks-image {
+  margin-top: .3125rem;
+  margin-bottom: 1.4375rem;
+  width: 100%;
+}
+
+.modal-thanks-title {
+  font-size: 3rem;
+}
+
+.modal-thanks-text {
+  font-size: 1rem;
+}
+
+.modal-thanks-button {
+  width: 100%;
+  padding: 1.2rem 4.35rem;
+  font-size: .9375rem;
+  margin-bottom: .4375rem;
+}
+
 
 .header-second {}
 
@@ -2287,4 +2345,32 @@ body {
   .breadcrumb-item::after {
     margin-right: 8px;
   }
+
+  .modal-thanks-wrapper {
+    margin-top: 15.46rem;
+    padding: 2.2rem 2.5rem 2.4rem 2.5rem;
+  }
+
+  .thanks-image {
+    margin-top: 0.3125rem 3.75px;
+    margin-bottom: 1.2rem;
+  }
+
+  .modal-thanks-title {
+    margin-bottom: 1.1rem;
+    letter-spacing: 0.3px;
+    word-spacing: 0px;
+  }
+
+  .modal-thanks-text {
+    padding-right: .3125rem;
+    margin-bottom: 1.58rem;
+  }
+
+  .modal-thanks-button {
+    padding: 1.6rem 4.35rem;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
+
 }
