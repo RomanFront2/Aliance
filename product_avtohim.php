@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/swiper-bundle.min.js" defer></script>
   <script src="js/just-validate.production.min.js" defer></script>
-  <script src="js/imask.js" defer></script>
   <script src="js/main.js" defer></script>
   <title>Автомобильная химия - Aliance Production</title>
 </head>
