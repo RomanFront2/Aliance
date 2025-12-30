@@ -14,15 +14,12 @@
               <label class="input-group-label" for="user-name">Имя</label>
             </div>
             <div class="input-group">
-              <!-- <input class="input" id="user-phone" type="tel" name="userphone" placeholder=" " maxlength="20" required>
-              <label class="input-group-label" for="user-phone">Номер телефона</label> -->
               <input 
-                class="input input-phone" 
+                class="input phone-mask" 
                 id="user-phone" 
                 type="tel" 
                 name="userphone" 
                 maxlength="20" 
-                pattern="^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$" 
                 required placeholder="+_ (___) ___-__-__"
                 >
               <label class="input-group-label-phone" for="user-phone">Номер телефона</label>
@@ -135,7 +132,6 @@
   <div class="container">
     <div class="footer-wrapper">
       <div class="footer-legal">
-        <!-- <p class="copyright">&copy; 2022 «Aliance Production». Все права защищены.</p> -->
         <p class="copyright">&copy; <?php echo date('Y')?> «Aliance Production». Все права защищены.</p>
         <a href="#" class="footer-policy">Политики конфиденциальности</a>
       </div>
@@ -169,15 +165,12 @@
           <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <!-- <input class="input modal-input" id="modal-user-phone" type="tel" name="userphone" placeholder="">
-          <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label> -->
           <input 
-              class="input input-phone" 
+              class="input phone-mask" 
               id="user-phone" 
               type="tel" 
               name="userphone" 
-              maxlength="20" 
-              pattern="^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$" 
+              maxlength="20"  
               required placeholder="+_ (___) ___-__-__"
               >
             <label class="input-group-label-phone" for="user-phone">Номер телефона</label>

@@ -863,7 +863,6 @@ body {
 }
 
 .cta-form-button {
-  /* flex-shrink: 0; */
   width: 14.6875rem;
   height: 3.875rem;
   padding: 0;
@@ -1036,7 +1035,6 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 160%;
-  /* margin-right: .4375rem; */
   color: #828a99;
 }
 
@@ -1081,7 +1079,8 @@ body {
   opacity: 1;
 }
 
-.modal.is-open .modal-dialog {
+.modal.is-open .modal-dialog,
+.modal-thanks .modal-thanks-wrapper {
   transform: translateY(0);
   opacity: 1;
 }
