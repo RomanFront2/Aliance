@@ -145,10 +145,10 @@
     </div>
   </div>
 </footer>
-<div class="modal">
+<div class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
-    <a href="#" class="modal-close" data-toggle="modal">
+    <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
       <svg class="close-icon" width="24" height="24">
         <use href="img/sprite.svg#close"></use>
       </svg>
@@ -158,7 +158,6 @@
       даже в самых сложных случаях!
     </p>
     <form action="handler.php" method="POST" class="modal-form">
-
       <div class="input-group-wrapper input-group-vertical">
         <div class="input-group modal-input-group">
           <input class="input modal-input" id="modal-user-name" type="text" name="username" autocomplete="name" placeholder=" ">
@@ -191,10 +190,10 @@
     </form>
   </div>
 </div>
-<div class="modal-thanks">
-  <div class="modal-thanks-wrapper">
+<div class="modal" id="alert-modal">
+  <div class="modal-dialog">
     <img src="img/thanks.png" alt="thanks" class="thanks-image">
-    <a href="#" class="modal-close" data-toggle="modal-thanks">
+    <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
       <svg class="close-icon" width="24" height="24">
         <use href="img/sprite.svg#close"></use>
       </svg>

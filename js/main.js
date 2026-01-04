@@ -104,53 +104,70 @@ const swiperBlog = new Swiper(".swiper.swiper-blog", {
   }
 })
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
+let currentModal; // текущее модальное окно
+let modalDialog; // диалоговое окно
+let alertModal = document.querySelector("#alert-modal") // окно с предупреждением
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // все кнопки модальных окон
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
-})
+    /* клик по переключателю */
+    //console.log(button.dataset.target);
+    // определяем текущее открытое окно
+    currentModal = document.querySelector(button.dataset.target);
+    // console.log(currentModal);
+    /* открываем текущее окно */
+    currentModal.classList.toggle("is-open");
+    /* назначаем диалоговое окно (открытое) */
+    modalDialog = currentModal.querySelector(".modal-dialog")
+    // отслеживаем клики по окну и вокруг
+    currentModal.addEventListener("click", event => {
+      // если клик в пустую область
+      if (!event.composedPath().includes(modalDialog)) {
+        // закрываем окно
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
+});
 
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
   }
 })
 
-const modal_thanks = document.querySelector(".modal-thanks");
-const modal_thanks_wrapper = document.querySelector(".modal-thanks-wrapper");
 const modal_thanks_button = document.querySelector('.modal-thanks-button');
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal-thanks" ||
-    event.target.parentNode.dataset.toggle == "modal-thanks" ||
-    (!event.composedPath().includes(modal_thanks_wrapper) &&
-      modal_thanks.classList.contains("is-open"))
-  ) {
-    event.preventDefault();
-    modal_thanks.classList.toggle("is-open");
-  }
-})
-
-document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal_thanks.classList.contains("is-open")) {
-    modal_thanks.classList.toggle("is-open");
-  }
-})
-
 modal_thanks_button.addEventListener('click', () => {
-  modal_thanks.classList.toggle("is-open");
+  currentModal.classList.remove("is-open");
   window.location.href = './';
 });
+
+
+
+// const modal_thanks = document.querySelector(".modal-thanks");
+// const modal_thanks_wrapper = document.querySelector(".modal-thanks-wrapper");
+// const modal_thanks_button = document.querySelector('.modal-thanks-button');
+
+// document.addEventListener("click", (event) => {
+//   if (
+//     event.target.dataset.toggle == "modal-thanks" ||
+//     event.target.parentNode.dataset.toggle == "modal-thanks" ||
+//     (!event.composedPath().includes(modal_thanks_wrapper) &&
+//       modal_thanks.classList.contains("is-open"))
+//   ) {
+//     event.preventDefault();
+//     modal_thanks.classList.toggle("is-open");
+//   }
+// })
+
+// document.addEventListener("keyup", (event) => {
+//   if (event.key == "Escape" && modal_thanks.classList.contains("is-open")) {
+//     modal_thanks.classList.toggle("is-open");
+//   }
+// })
 
 const forms = document.querySelectorAll("form");
 forms.forEach((form) => {
@@ -186,7 +203,21 @@ forms.forEach((form) => {
           if (response.ok) {
             thisForm.reset();
             // alert("Форма отправлена!");
-            modal_thanks.classList.toggle("is-open");
+            // modal_thanks.classList.toggle("is-open");
+            if (currentModal) {
+              currentModal.classList.remove("is-open");
+            };
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog")
+            // отслеживаем клики по окну и вокруг
+            currentModal.addEventListener("click", event => {
+              // если клик в пустую область
+              if (!event.composedPath().includes(modalDialog)) {
+                // закрываем окно
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert("Ошибка. Текст ошибки: ".response.statusText);
           }
